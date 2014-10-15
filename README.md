@@ -16,7 +16,12 @@ Usage
 
 Consider an example case class for a person entity:
 
-    case class Person(id: UUID, name: String, age: Int, email: Option[String], friends: Seq[String])
+    case class Person(
+        id: UUID,
+        name: String,
+        age: Int,
+        email: Option[String],
+        friends: Seq[String])
 
 A typical definition of a sample person generator is:
 
