@@ -8,7 +8,7 @@
     <artifactId>sample</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Sample is monadic random data generator.</description>
+    <description>Sample is a monadic random data generator.</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
