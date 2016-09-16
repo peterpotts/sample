@@ -1,5 +1,7 @@
 package com.peterpotts.sample
 
-case object SampleLift {
-  def apply[A](a: A): Sample[A] = SampleUnit.map(_ => a)
+class SampleLift[A](a: A) extends MapSample[Unit, A](SampleUnit, _ => a)
+
+object SampleLift {
+  def apply[A](a: A): Sample[A] = new SampleLift(a)
 }

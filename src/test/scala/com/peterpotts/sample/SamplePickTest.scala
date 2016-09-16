@@ -1,16 +1,15 @@
 package com.peterpotts.sample
 
-import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
 import org.scalatest.{Matchers, WordSpec}
 
-@RunWith(classOf[JUnitRunner])
+import scala.collection.immutable.IndexedSeq
+
 class SamplePickTest extends WordSpec with Matchers {
   "A sample pick instance" should {
     "pick values" in {
-      val animals = Seq("cat", "dog")
+      val animals = IndexedSeq("cat", "dog")
       val animal = SamplePick(animals).next()
-      animals.contains(animal) should equal(true)
+      animals.contains(animal) shouldEqual true
     }
   }
 }

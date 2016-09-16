@@ -1,8 +1,8 @@
 package com.peterpotts.sample
 
 /**
- * Sample data generator trait that incorporates for-comprehension.
- */
+  * Sample data generator trait that incorporates for-comprehension.
+  */
 trait Sample[+A] {
   def next(): A
 

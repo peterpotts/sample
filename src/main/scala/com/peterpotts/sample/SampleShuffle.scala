@@ -2,6 +2,10 @@ package com.peterpotts.sample
 
 import scala.util.Random
 
-case class SampleShuffle[T](samples: Sample[T]*) extends Sample[T] {
+class SampleShuffle[T](samples: Sample[T]*) extends Sample[T] {
   def next(): T = samples(Random.nextInt(samples.size)).next()
+}
+
+object SampleShuffle {
+  def apply[T](samples: Sample[T]*) = new SampleShuffle(samples: _*)
 }

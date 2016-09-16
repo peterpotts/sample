@@ -1,14 +1,4 @@
-# Eclipse
-.classpath
-.loadpath
-.project
-.metadata
-.cache
-.settings/
-
-# InteliJ
 .idea/
-*.iml
-
-# Maven
 target/
+project/project/
+log/

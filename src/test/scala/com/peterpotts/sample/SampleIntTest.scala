@@ -1,10 +1,7 @@
 package com.peterpotts.sample
 
-import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
 import org.scalatest.{Matchers, WordSpec}
 
-@RunWith(classOf[JUnitRunner])
 class SampleIntTest extends WordSpec with Matchers {
   "A sample int instance" should {
     "generate int values" in {
