@@ -9,7 +9,8 @@ Description
 In a typical application, there is a need to generator sample data for unit tests. Usually, the sample data is
 arbitrary, simplistic and worse still it is usually brittle. For example, suppose that many tests rely on sample
 instances of some case class. If the case class is ever modified, then many tests may have to be modified, even
-though this change should have had no direct impact on most of the affected tests.
+though this change should not have impacted them. This library helps to remove the need for magic values and
+makes tests less brittle.
 
 Usage
 -----
